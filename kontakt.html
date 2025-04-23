@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Hobby</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <meta name="author" content="Mateusz Morgaś">
+    <meta name="copyright" content="Mateusz Morgaś">
+    <meta name="description" content="Ta witryna zawiera ogólne informacje na temat moich zainteresowń, mam nadzieję, że cię to zainteresuje i zachęci do zgłębienia tematu.">
+    <meta name="keywords" content="hobby, Mateusz_Morgaś"/>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Główna</a></li>
+                <li><a href="o_mnie.html">O mnie</a></li>
+                <li><a href="gallery.html">Galeria</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="https://paderek-knurow.pl/" target="_blank">Strona mojej szkoły</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main class="kont_main">
+            <!-- FORMULARZ -->
+            <form method="post">
+                <h1>Formularz kontaktowy</h1>
+              <fieldset class="name_f">
+                <label for="name">Imię i nazwisko/nick chess.com:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+              </fieldset>
+              <fieldset class="email_f">
+                <label for="email">Adres e-mail:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+              </fieldset>
+              <fieldset class="phone_f">
+                <label for="phone">Numer telefonu:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" placeholder="123456789" required><br><br>
+              </fieldset>
+              <fieldset class="mess_f">
+                <label for="message">Wiadomość:</label><br>
+                <textarea id="message" name="message" rows="6" cols="40" required></textarea><br><br>
+              </fieldset>
+              <input type="submit" value="Wyślij" id="submit">
+              <input type="reset" value="Wyczyść" id="reset">
+            </form>
+          </main>
+        <aside class="wynik_f">
+            <h2>Twoje dane:</h2>
+
+        </aside>
+    </div>
+</body>
+</html>
